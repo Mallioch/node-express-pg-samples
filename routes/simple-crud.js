@@ -1,5 +1,9 @@
 const router = require('express').Router();
-const Client = require('pg').Client;
+const pg = require('pg');
+const Client = pg.Client;
+
+const pgCamelCaser = require('pg-camelcase').inject;
+pgCamelCaser(pg);
 
 router.get('/', (req, res) => {
 

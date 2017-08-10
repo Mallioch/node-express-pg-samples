@@ -13,12 +13,12 @@
     <table>
       {{#people}}
       <tr>
-        <td>{{first_name}}</td>
-        <td>{{last_name}}</td>
+        <td>{{firstName}}</td>
+        <td>{{lastName}}</td>
         <td>{{age}}</td>
-        <td><a href="/simple-crud/update/{{person_id}}">edit</a></td>
+        <td><a href="/simple-crud/update/{{personId}}">edit</a></td>
         <td>
-          <form method="POST" action="/simple-crud/delete/{{person_id}}">
+          <form method="POST" action="/simple-crud/delete/{{personId}}">
             <button>delete</button>
           </form>
         </td>
